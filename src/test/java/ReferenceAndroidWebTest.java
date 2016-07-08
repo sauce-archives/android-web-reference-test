@@ -37,7 +37,14 @@ public class ReferenceAndroidWebTest {
 	}
 
 	@Test
-	public void openWebpageAndTakeScreenshot() {
+	public void openWebpageAndTakeScreenshotFirst() {
+		String url = "https://www.google.com";
+		driver.get(url);
+		takeScreenshot();
+	}
+
+	@Test
+	public void openWebpageAndTakeScreenshotSecond() {
 		String url = "https://www.google.com";
 		driver.get(url);
 		takeScreenshot();
