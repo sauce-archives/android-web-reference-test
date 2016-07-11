@@ -20,7 +20,7 @@ public class ReferenceAndroidWebTest {
 
 		capabilities.setCapability("testobject_app_id", "1");
 		capabilities.setCapability("testobject_api_key", System.getenv("TESTOBJECT_API_KEY")); // API key through env variable
-		capabilities.setCapability("testobject_device", System.getenv("TESTOBJECT_ANDROID_DEVICE_ID")); // device id through env variable
+		capabilities.setCapability("testobject_device", System.getenv("TESTOBJECT_DEVICE_ID")); // device id through env variable
 		capabilities.setCapability("testobject_appium_version", "1.5.2");
 
 		this.startTime = System.currentTimeMillis();
